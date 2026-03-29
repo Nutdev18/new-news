@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประกาศข่าวสาร | มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Noto+Serif+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- ไฟล์ CSS แยกต่างหาก -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     TOP BAR — ลิงก์ด่วนด้านบนสุด
+     ═══════════════════════════════════════════ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="#">บุคลากร</a>
+    <a href="#">ศิษย์เก่า</a>
+    <a href="#">ห้องสมุด</a>
+    <a href="#">คณะ / หน่วยงาน</a>
+    <a href="#">ITA</a>
+    <a href="#">FAQ</a>
+    <a href="#">ติดต่อเรา</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR — แถบเมนูหลัก
+     ═══════════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">RM</div>
+      <div class="logo-text">
+        <span class="logo-th">ราชมงคลธัญบุรี</span>
+        <span class="logo-en">RMUTT News Portal</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#"          class="nav-link active">หน้าแรก</a>
+      <a href="#news"      class="nav-link">ข่าวสาร</a>
+      <a href="#events"    class="nav-link">กิจกรรม</a>
+      <a href="#scholarship" class="nav-link">ทุนการศึกษา</a>
+      <a href="#academic"  class="nav-link">วิชาการ</a>
+      <a href="#how-to"    class="nav-link">วิธีเพิ่มโพสต์</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn-search">🔍 ค้นหา</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO — ส่วนหัวหน้าเว็บ
+     ═══════════════════════════════════════════ -->
+<section class="hero">
+  <svg class="hero-waves" viewBox="0 0 1440 200" preserveAspectRatio="none">
+    <path d="M0,100 C240,160 480,40 720,100 C960,160 1200,40 1440,100 L1440,200 L0,200 Z" fill="rgba(201,168,76,0.05)"/>
+    <path d="M0,130 C360,80 720,180 1080,130 C1260,105 1380,140 1440,130 L1440,200 L0,200 Z" fill="rgba(17,34,64,0.5)"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-badge">ระบบประกาศข่าวสาร</div>
+    <h1 class="hero-title">มหาวิทยาลัยเทคโนโลยี<span>ราชมงคลธัญบุรี</span></h1>
+    <div class="hero-divider"></div>
+    <p class="hero-subtitle">ติดตามข่าวสาร ประกาศสำคัญ กิจกรรม และทุนการศึกษา จากมหาวิทยาลัยได้ที่นี่</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FILTER TABS — ปุ่มกรองหมวดหมู่
+     ═══════════════════════════════════════════ -->
+<div class="filter-section" id="news">
+  <div class="filter-bar">
+    <button class="filter-btn active"  onclick="filterPosts('all', this)">
+      📋 ทั้งหมด <span class="count" id="count-all">0</span>
+    </button>
+    <button class="filter-btn" onclick="filterPosts('urgent', this)">
+      🔴 ด่วน <span class="count" id="count-urgent">0</span>
+    </button>
+    <button class="filter-btn" onclick="filterPosts('announce', this)">
+      📢 ประกาศ <span class="count" id="count-announce">0</span>
+    </button>
+    <button class="filter-btn" onclick="filterPosts('event', this)" id="events">
+      🗓️ กิจกรรม <span class="count" id="count-event">0</span>
+    </button>
+    <button class="filter-btn" onclick="filterPosts('academic', this)" id="academic">
+      📚 วิชาการ <span class="count" id="count-academic">0</span>
+    </button>
+    <button class="filter-btn" onclick="filterPosts('scholarship', this)" id="scholarship">
+      🎓 ทุนการศึกษา <span class="count" id="count-scholarship">0</span>
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MAIN CONTENT — เนื้อหาหลัก (โพสต์ + Sidebar)
+     ═══════════════════════════════════════════ -->
+<div class="main-content">
+
+  <!-- LEFT: โพสต์ทั้งหมด -->
+  <div>
+
+    <!-- Featured Post — โพสต์เด่น (แก้ไขได้ใน script.js ในตัวแปร featuredPost) -->
+    <div class="featured-post" data-category="announce" onclick="openModal('featured')">
+      <div class="featured-img" style="font-size:90px">🏆
+        <span class="featured-badge">⭐ เด่น</span>
+      </div>
+      <div class="featured-body">
+        <span class="tag tag-announce">ประกาศ</span>
+        <h2>มหาวิทยาลัยรับรางวัล Thailand Cybersecurity Excellence Awards 2025</h2>
+        <p>มทร.ธัญบุรี คว้ารางวัล Best Performance Awards ด้านความมั่นคงไซเบอร์ จาก สกมช. เสริมมาตรฐานดิจิทัลมหาวิทยาลัยไทย ในงาน Prime Minister Awards 2025</p>
+        <div class="post-meta">
+          <span>📅 25 มีนาคม 2568</span>
+          <span>👁 2,840 ครั้ง</span>
+          <span>🏷 ประกาศสำคัญ</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post Cards — render อัตโนมัติจาก script.js -->
+    <div class="posts-grid" id="posts-container" style="margin-top:24px"></div>
+
+  </div>
+
+  <!-- RIGHT: Sidebar -->
+  <aside class="sidebar">
+
+    <!-- สถิติ -->
+    <div class="sidebar-card">
+      <div class="sidebar-header"><span class="icon">📊</span><h3>สถิติข่าวสาร</h3></div>
+      <div class="sidebar-body">
+        <div class="stats-grid">
+          <div class="stat-box"><span class="num">47</span><div class="label">ข่าวทั้งหมด</div></div>
+          <div class="stat-box"><span class="num">12</span><div class="label">กิจกรรม</div></div>
+          <div class="stat-box"><span class="num">8</span><div class="label">ทุนการศึกษา</div></div>
+          <div class="stat-box"><span class="num">5</span><div class="label">ประกาศด่วน</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- วันสำคัญ -->
+    <div class="sidebar-card">
+      <div class="sidebar-header"><span class="icon">📅</span><h3>วันสำคัญที่ใกล้มาถึง</h3></div>
+      <div class="sidebar-body">
+        <div class="date-item">
+          <div class="date-box"><div class="day">5</div><div class="month">เม.ย.</div></div>
+          <div class="date-info"><h4>วันสุดท้ายลงทะเบียน</h4><p>ลงทะเบียนเรียนภาคฤดูร้อน 2568</p></div>
+        </div>
+        <div class="date-item">
+          <div class="date-box"><div class="day">12</div><div class="month">เม.ย.</div></div>
+          <div class="date-info"><h4>วันหยุดสงกรานต์</h4><p>หยุดราชการ 12–15 เมษายน 2568</p></div>
+        </div>
+        <div class="date-item">
+          <div class="date-box"><div class="day">30</div><div class="month">เม.ย.</div></div>
+          <div class="date-info"><h4>ส่งผลการสอบปลายภาค</h4><p>อาจารย์ส่งผลการเรียนนักศึกษา</p></div>
+        </div>
+        <div class="date-item">
+          <div class="date-box"><div class="day">15</div><div class="month">พ.ค.</div></div>
+          <div class="date-info"><h4>เปิดภาคเรียน 1/2568</h4><p>เปิดเรียนภาคการศึกษาต้น</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ลิงก์ด่วน -->
+    <div class="sidebar-card">
+      <div class="sidebar-header"><span class="icon">🔗</span><h3>ลิงก์ที่ใช้บ่อย</h3></div>
+      <div class="sidebar-body">
+        <div class="bulletin-item"><span>ระบบบริการการศึกษา (Reg)</span></div>
+        <div class="bulletin-item"><span>ระบบสารสนเทศนักศึกษา</span></div>
+        <div class="bulletin-item"><span>Email นักศึกษา / บุคลากร</span></div>
+        <div class="bulletin-item"><span>ห้องสมุดอิเล็กทรอนิกส์</span></div>
+        <div class="bulletin-item"><span>ระบบลางานออนไลน์</span></div>
+        <div class="bulletin-item"><span>ดาวน์โหลดแบบฟอร์ม</span></div>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HOW-TO — คำแนะนำเพิ่มโพสต์
+     ═══════════════════════════════════════════ -->
+<section class="how-to-section" id="how-to">
+  <div class="how-to-card">
+    <h2>📝 วิธีเพิ่มโพสต์ข่าวสารใหม่</h2>
+    <p>แก้ไขไฟล์ <strong style="color:var(--gold-light)">script.js</strong> ในส่วน <strong style="color:var(--gold-light)">posts</strong> array ไม่ต้องใช้ Database ใดๆ</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>เปิดไฟล์ script.js</h4>
+        <p>เปิดด้วย VS Code, Notepad++ หรือ Text Editor ใดก็ได้</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>หา const posts = [</h4>
+        <p>มองหา array ชื่อ <code style="color:var(--gold-light)">posts</code> ในไฟล์ script.js</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>เพิ่มโพสต์ใหม่</h4>
+        <p>Copy โครงสร้าง object แล้ว paste ต่อท้าย array แก้ค่าตามต้องการ</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>บันทึกและ Refresh</h4>
+        <p>Save ไฟล์แล้ว refresh browser โพสต์จะปรากฏทันที</p>
+      </div>
+    </div>
+    <div class="code-sample"><span class="code-comment">// ตัวอย่างโพสต์ใหม่ — Copy แล้ว paste ใน script.js</span>
+{
+  <span class="code-key">id</span>: <span class="code-val">8</span>,                    <span class="code-comment">// เลขไม่ซ้ำกัน</span>
+  <span class="code-key">category</span>: <span class="code-str">"announce"</span>,  <span class="code-comment">// urgent | announce | event | academic | scholarship</span>
+  <span class="code-key">icon</span>: <span class="code-str">"📢"</span>,
+  <span class="code-key">title</span>: <span class="code-str">"ชื่อหัวข้อประกาศ"</span>,
+  <span class="code-key">excerpt</span>: <span class="code-str">"รายละเอียดย่อ 1-2 บรรทัด"</span>,
+  <span class="code-key">content</span>: <span class="code-str">"เนื้อหาเต็มเมื่อกดเปิดอ่าน"</span>,
+  <span class="code-key">date</span>: <span class="code-str">"29 มีนาคม 2568"</span>,
+  <span class="code-key">views</span>: <span class="code-str">"0"</span>
+},</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี</h4>
+      <p>39 หมู่ 1 ถนนรังสิต-นครนายก ต.คลองหก</p>
+      <p>อ.ธัญบุรี จ.ปทุมธานี 12110</p>
+      <p style="margin-top:8px">📞 0-2549-3000</p>
+      <p>📧 contact@rmutt.ac.th</p>
+    </div>
+    <div class="footer-col">
+      <h4>ลิงก์ด่วน</h4>
+      <a href="#">ระบบการศึกษา</a>
+      <a href="#">E-Mail / Wifi</a>
+      <a href="#">ห้องสมุด</a>
+      <a href="#">ดาวน์โหลด</a>
+      <a href="#">แผนที่มหาวิทยาลัย</a>
+    </div>
+    <div class="footer-col">
+      <h4>ติดตามเรา</h4>
+      <a href="#">🌐 www.rmutt.ac.th</a>
+      <a href="#">📘 Facebook RMUTT</a>
+      <a href="#">📸 Instagram RMUTT</a>
+      <a href="#">▶️ YouTube RMUTT</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2568 มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี. สงวนลิขสิทธิ์</span>
+    <span style="color:var(--gold-light)">ระบบประกาศข่าวสาร v1.0</span>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     MODAL — Popup อ่านเนื้อหาเต็ม
+     ═══════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal" style="position:relative">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <span class="tag" id="modal-tag"></span>
+    <h2 id="modal-title" style="margin-top:12px"></h2>
+    <div class="post-meta" style="margin-bottom:20px">
+      <span id="modal-date"></span>
+      <span id="modal-views"></span>
+    </div>
+    <div class="modal-body" id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ไฟล์ JavaScript แยกต่างหาก (ต้องอยู่ก่อนปิด body) -->
+<script src="script.js"></script>
+
+</body>
+</html>
