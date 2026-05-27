@@ -28,6 +28,18 @@ const posts = [
     
   },
 
+   {
+    id: 3,
+    category: "urgent",
+    icon: "👨‍👦",
+    title: "พี่น้อง-สายรหัส",
+    excerpt: '<a href="https://docs.google.com/forms/d/e/1FAIpQLSfjlEqdJ1ybBG8elwWPKfK0lWUAzw-D_ekAa9cLBxq2ufmqcg/viewform" target="_blank">คลิกลงทะเบียน</a>',
+    content: "\n📍 สถานที่:ไม่ระบุ\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLSfjlEqdJ1ybBG8elwWPKfK0lWUAzw-D_ekAa9cLBxq2ufmqcg/viewform' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n \n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ ระหว่างพี่น้อง\n• ความบรรเทิงต่างๆ"
+    
+    
+  },
+
+
   
 
   
@@ -46,7 +58,7 @@ const posts = [
 
 // Map category → label & CSS class
 const tagMap = {
-  urgent:      { label: 'ด่วน',         cls: 'tag-urgent'      },
+  urgent:      { label: 'นันทนาการ',         cls: 'tag-urgent'      },
   announce:    { label: 'ประกาศ',       cls: 'tag-announce'    },
   event:       { label: 'กิจกรรม',      cls: 'tag-event'       },
   academic:    { label: 'วิชาการ',      cls: 'tag-academic'    },
