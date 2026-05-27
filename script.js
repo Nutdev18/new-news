@@ -1,8 +1,4 @@
-const link = document.createElement("a");
-link.href = "https://google.com";
-link.textContent = "กดตรงนี้";
 
-document.body.appendChild(link);
 
 /* ─────────────────────────────────────────────────────────
    📌 เพิ่มโพสต์ใหม่ได้ที่นี่ — เพิ่ม object ใหม่ใน array นี้
