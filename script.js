@@ -11,7 +11,7 @@ const posts = [
     icon: "🎉",
     title: "ปฐมนิเทศรอบ มหาลัย",
     excerpt: '<a href="https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse" target="_blank">คลิกลงทะเบียน</a>',
-    content: "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ขอเชิญนักศีกษา เข้าร่วมงาน ปฐมนิเทศ รอบหมาลัย 2026\n\n📅 วันที่: 29 พฤษภาคม 2569 และ วันที่: 30 พฤษภาคม 2569\n🕗 เวลา: 07.00-16.00 น.\n📍 สถานที่: ณ หอประชุมมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ\n• ความบรรเทิงต่างๆ\n• กิจกรรมหมวดที่ 16\n",
+    content: "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ขอเชิญนักศีกษา เข้าร่วมงาน ปฐมนิเทศ รอบหมาลัย 2026\n\n📅 วันที่: 29 พฤษภาคม 2569 และ วันที่: 30 พฤษภาคม 2569\n🕗 เวลา: 07.00-16.00 น.\n📍 สถานที่: ณ หอประชุมมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n สิ่งที่ต้องเตรียม:\n1 บัตรประชาชน\n2 ปากกา\n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ\n• ความบรรเทิงต่างๆ\n• กิจกรรมหมวดที่ 16\n",
     date: "6 พฤษภาคม 2568"
     
   },
