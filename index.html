@@ -41,12 +41,7 @@
       </div>
     </a>
     <div class="nav-links">
-      <a href="#"          class="nav-link active">หน้าแรก</a>
-      <a href="#news"      class="nav-link">ข่าวสาร</a>
-      <a href="#events"    class="nav-link">กิจกรรม</a>
-      <a href="#scholarship" class="nav-link">ทุนการศึกษา</a>
-      <a href="#academic"  class="nav-link">วิชาการ</a>
-      <a href="#how-to"    class="nav-link">วิธีเพิ่มโพสต์</a>
+      <a href="#"class="nav-link active">หน้าแรก</a>
     </div>
     <div class="nav-right">
       <button class="btn-search">🔍 ค้นหา</button>
@@ -78,18 +73,19 @@
     <button class="filter-btn active"  onclick="filterPosts('all', this)">
       📋 ทั้งหมด <span class="count" id="count-all">0</span>
     </button>
-    <button class="filter-btn" onclick="filterPosts('urgent', this)">
-      🔴 ด่วน <span class="count" id="count-urgent">0</span>
-    </button>
+
     <button class="filter-btn" onclick="filterPosts('announce', this)">
       📢 ประกาศ <span class="count" id="count-announce">0</span>
     </button>
+
     <button class="filter-btn" onclick="filterPosts('event', this)" id="events">
       🗓️ กิจกรรม <span class="count" id="count-event">0</span>
     </button>
+
     <button class="filter-btn" onclick="filterPosts('academic', this)" id="academic">
       📚 วิชาการ <span class="count" id="count-academic">0</span>
     </button>
+
     <button class="filter-btn" onclick="filterPosts('scholarship', this)" id="scholarship">
       🎓 ทุนการศึกษา <span class="count" id="count-scholarship">0</span>
     </button>
@@ -104,22 +100,7 @@
   <!-- LEFT: โพสต์ทั้งหมด -->
   <div>
 
-    <!-- Featured Post — โพสต์เด่น (แก้ไขได้ใน script.js ในตัวแปร featuredPost) -->
-    <div class="featured-post" data-category="announce" onclick="openModal('featured')">
-      <div class="featured-img" style="font-size:90px">🏆
-        <span class="featured-badge">⭐ เด่น</span>
-      </div>
-      <div class="featured-body">
-        <span class="tag tag-announce">ประกาศ</span>
-        <h2>มหาวิทยาลัยรับรางวัล Thailand Cybersecurity Excellence Awards 2025</h2>
-        <p>มทร.ธัญบุรี คว้ารางวัล Best Performance Awards ด้านความมั่นคงไซเบอร์ จาก สกมช. เสริมมาตรฐานดิจิทัลมหาวิทยาลัยไทย ในงาน Prime Minister Awards 2025</p>
-        <div class="post-meta">
-          <span>📅 25 มีนาคม 2568</span>
-          <span>👁 2,840 ครั้ง</span>
-          <span>🏷 ประกาศสำคัญ</span>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Post Cards — render อัตโนมัติจาก script.js -->
     <div class="posts-grid" id="posts-container" style="margin-top:24px"></div>
@@ -134,10 +115,10 @@
       <div class="sidebar-header"><span class="icon">📊</span><h3>สถิติข่าวสาร</h3></div>
       <div class="sidebar-body">
         <div class="stats-grid">
-          <div class="stat-box"><span class="num">47</span><div class="label">ข่าวทั้งหมด</div></div>
-          <div class="stat-box"><span class="num">12</span><div class="label">กิจกรรม</div></div>
-          <div class="stat-box"><span class="num">8</span><div class="label">ทุนการศึกษา</div></div>
-          <div class="stat-box"><span class="num">5</span><div class="label">ประกาศด่วน</div></div>
+          <div class="stat-box"><span class="num">1</span><div class="label">ข่าวทั้งหมด</div></div>
+          <div class="stat-box"><span class="num">1</span><div class="label">กิจกรรม</div></div>
+          <div class="stat-box"><span class="num">0</span><div class="label">ทุนการศึกษา</div></div>
+          <div class="stat-box"><span class="num">1 </span><div class="label">ประกาศ</div></div>
         </div>
       </div>
     </div>
@@ -181,48 +162,7 @@
   </aside>
 </div>
 
-<!-- ═══════════════════════════════════════════
-     HOW-TO — คำแนะนำเพิ่มโพสต์
-     ═══════════════════════════════════════════ -->
-<section class="how-to-section" id="how-to">
-  <div class="how-to-card">
-    <h2>📝 วิธีเพิ่มโพสต์ข่าวสารใหม่</h2>
-    <p>แก้ไขไฟล์ <strong style="color:var(--gold-light)">script.js</strong> ในส่วน <strong style="color:var(--gold-light)">posts</strong> array ไม่ต้องใช้ Database ใดๆ</p>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h4>เปิดไฟล์ script.js</h4>
-        <p>เปิดด้วย VS Code, Notepad++ หรือ Text Editor ใดก็ได้</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h4>หา const posts = [</h4>
-        <p>มองหา array ชื่อ <code style="color:var(--gold-light)">posts</code> ในไฟล์ script.js</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h4>เพิ่มโพสต์ใหม่</h4>
-        <p>Copy โครงสร้าง object แล้ว paste ต่อท้าย array แก้ค่าตามต้องการ</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h4>บันทึกและ Refresh</h4>
-        <p>Save ไฟล์แล้ว refresh browser โพสต์จะปรากฏทันที</p>
-      </div>
-    </div>
-    <div class="code-sample"><span class="code-comment">// ตัวอย่างโพสต์ใหม่ — Copy แล้ว paste ใน script.js</span>
-{
-  <span class="code-key">id</span>: <span class="code-val">8</span>,                    <span class="code-comment">// เลขไม่ซ้ำกัน</span>
-  <span class="code-key">category</span>: <span class="code-str">"announce"</span>,  <span class="code-comment">// urgent | announce | event | academic | scholarship</span>
-  <span class="code-key">icon</span>: <span class="code-str">"📢"</span>,
-  <span class="code-key">title</span>: <span class="code-str">"ชื่อหัวข้อประกาศ"</span>,
-  <span class="code-key">excerpt</span>: <span class="code-str">"รายละเอียดย่อ 1-2 บรรทัด"</span>,
-  <span class="code-key">content</span>: <span class="code-str">"เนื้อหาเต็มเมื่อกดเปิดอ่าน"</span>,
-  <span class="code-key">date</span>: <span class="code-str">"29 มีนาคม 2568"</span>,
-  <span class="code-key">views</span>: <span class="code-str">"0"</span>
-},</div>
-  </div>
-</section>
+
 
 <!-- ═══════════════════════════════════════════
      FOOTER

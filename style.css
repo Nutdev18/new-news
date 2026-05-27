@@ -549,3 +549,13 @@ footer { position: relative; z-index: 1; background: rgba(7,17,32,0.98); border-
   .steps-grid { grid-template-columns: 1fr; }
   .how-to-card { padding: 24px; }
 }
+
+.post-card a {
+    color: #ffa200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-card a:hover {
+    color: white;
+}
