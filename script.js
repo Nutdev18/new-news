@@ -45,7 +45,7 @@ const posts = [
     icon: "👩‍💻",
     title: "Agoda Tech Camp Day",
     excerpt: '<a href="https://docs.google.com/forms/d/e/1FAIpQLSfuUGu7Ml-v08v_kFbl5cuAm-HIfzWOyZVDddAjHNjmQHKfuQ/viewform" target="_blank">คลิกลงทะเบียน</a>',
-    content: "\n📍 สถานที่: สำนักงานของอโกด้า คารวัน แบงค็อก ทาวเวอร์ 5\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLSfuUGu7Ml-v08v_kFbl5cuAm-HIfzWOyZVDddAjHNjmQHKfuQ/viewform' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n🕗 เวลา: 11.00-17.00 น.\nทำการจัดกิจกรรม 2 วัน วันที่ 16 และ วันที่ 17 กรกฎาคม 2569\nสิ่งที่ได้เมื่อเข้าร่วม:\n• skill ในการใช้ Vibe coding\n• certificate",
+    content: "\n📍 สถานที่: สำนักงานของอโกด้า คารวัน แบงค็อก ทาวเวอร์ 5\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLSfuUGu7Ml-v08v_kFbl5cuAm-HIfzWOyZVDddAjHNjmQHKfuQ/viewform' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n🕗 เวลา: 11.00-17.00 น.\nทำการจัดกิจกรรม 2 วัน วันที่ 16 และ วันที่ 17 กรกฎาคม 2569\nสิ่งที่ได้เมื่อเข้าร่วม:\n• skill Vibe coding\n• certificate",
     date: " 16 และ 17 กรกฎาคม 2569"
     
   },
