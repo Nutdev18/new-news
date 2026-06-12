@@ -23,12 +23,12 @@ const posts = [
     icon: "🎉",
     title: "ปฐมนิเทศรอบ มหาลัย",
     excerpt: '<a href="https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse" target="_blank">คลิกลงทะเบียน</a>',
-    content: "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ขอเชิญนักศีกษา เข้าร่วมงาน ปฐมนิเทศ รอบหมาลัย 2026\n\n📅 วันที่: 30 มิถุนายน 2569\n🕗 เวลา: 07.00-16.00 น.\n📍 สถานที่: ณ หอประชุมมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n \n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ\n• ความบรรเทิงต่างๆ\n• กิจกรรมหมวดที่ 16\n",
+    content: "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ขอเชิญนักศีกษา เข้าร่วมงาน ปฐมนิเทศ รอบหมาลัย 2026\n\n📅 วันที่: 30 มิถุนายน 2569\n🕗 เวลา: 07.00-16.00 น.\n📍 สถานที่: ณ หอประชุมมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n \n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ\n• ความบรรเทิงต่างๆ\n• กิจกรรมหมวดที่ 16\nและมีประชุมผู้ปกครอง เวลา 09:00 - 11:00 น.\nสถานที่: ณ ห้องวิทยาศาสตร์และโทคโนโลยีห้องประชุมเปิดเวลา 08:30 น.\n<a href='https://www.facebook.com/SCIandTECH.RMUTT/posts/pfbid026YRVzaAsSqkFuT1TqVH1P2AUNJYAUih5HWJjpeaMVAUyMP2yfKf9abi91LbhVUnwl?rdid=96oY8RjK3mXpJdg2#' target='_blank' style='color:#ffd700;font-weight:bold;'>รายละเอียดเพิ่มเติม</a>",
     date: "30 มิถุนายน 2569"
     
   },
 
-   {
+  {
     id: 3,
     category: "urgent",
     icon: "👨‍👦",
@@ -47,6 +47,17 @@ const posts = [
     excerpt: '<a href="https://docs.google.com/forms/d/e/1FAIpQLSfuUGu7Ml-v08v_kFbl5cuAm-HIfzWOyZVDddAjHNjmQHKfuQ/viewform" target="_blank">คลิกลงทะเบียน</a>',
     content: "\n📍 สถานที่: สำนักงานของอโกด้า คารวัน แบงค็อก ทาวเวอร์ 5\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLSfuUGu7Ml-v08v_kFbl5cuAm-HIfzWOyZVDddAjHNjmQHKfuQ/viewform' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n🕗 เวลา: 11.00-17.00 น.\nทำการจัดกิจกรรม 2 วัน วันที่ 16 และ วันที่ 17 กรกฎาคม 2569\nสิ่งที่ได้เมื่อเข้าร่วม:\n• skill Vibe coding\n• certificate",
     date: " 16 และ 17 กรกฎาคม 2569"
+    
+  },
+
+  {
+    id: 5,
+    category: "event",
+    icon: "🧑‍🎓",
+    title: "ปฐมนิเทศรอบ คณะ",
+    excerpt: '<a href="https://www.facebook.com/SCIandTECH.RMUTT/posts/pfbid026YRVzaAsSqkFuT1TqVH1P2AUNJYAUih5HWJjpeaMVAUyMP2yfKf9abi91LbhVUnwl?rdid=96oY8RjK3mXpJdg2#">รายละเอียด</a>',
+    content: "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ขอเชิญนักศีกษา เข้าร่วมงาน ปฐมนิเทศ คณะวิทยาศาสตร์และเทคโนโลยี 2026\n\n📅 วันที่: 1 กรกฎาคม 2569 และ วันที่: 2 กรกฎาคม 2569\n🕗 เวลา: 08.00-17.00 น.\n📍 สถานที่: ณ ห้องประชุมนลินวิทย์ คณะวิทยาศาสตร์และเทคโนโลยี\n\n<a href='https://www.facebook.com/SCIandTECH.RMUTT/posts/pfbid026YRVzaAsSqkFuT1TqVH1P2AUNJYAUih5HWJjpeaMVAUyMP2yfKf9abi91LbhVUnwl?rdid=96oY8RjK3mXpJdg2#' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 รายละเอียดเพิ่มเติม</a>\nสิ่งที่ต้องเตรียมมา:\n• เสือสีดำ\n• กางเกงวอมขายาวของมหาลัยหรือของของที่ไหนก็ได้เอามาโลด\n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ\n• ความบรรเทิงต่างๆ\n• กิจกรรมหมวดที่ เท่าไหร่ไม่รู้ พี่เข้าไม่ยอมบอกสงสัยจะซีเคร็ท",
+    date: "1 และ 2กรกฎาคม 2569"
     
   },
 
