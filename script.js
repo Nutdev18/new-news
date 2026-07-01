@@ -17,7 +17,7 @@ const posts = [
     
   },*/
 
-  {
+  /*{
     id: 2,
     category: "event",
     icon: "🎉",
@@ -26,7 +26,7 @@ const posts = [
     content: "มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ขอเชิญนักศีกษา เข้าร่วมงาน ปฐมนิเทศ รอบหมาลัย 2026\n\n📅 วันที่: 30 มิถุนายน 2569\n🕗 เวลา: 07.00-16.00 น.\n📍 สถานที่: ณ หอประชุมมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี\n\n<a href='https://docs.google.com/forms/d/e/1FAIpQLScr4DVovgOBPmTo7SIsZphdaQ3yA0gybFJUWJ2dKzmlZNcjBA/formResponse' target='_blank' style='color:#ffd700;font-weight:bold;'>📌 คลิกลงทะเบียนที่นี่</a>\n \n\nสิ่งที่ได้เมื่อเข้าร่วม:\n• เสริมสร้างมิตรภาพ\n• ความบรรเทิงต่างๆ\n• กิจกรรมหมวดที่ 16\nและมีประชุมผู้ปกครอง เวลา 09:00 - 11:00 น.\nสถานที่: ณ ห้องวิทยาศาสตร์และโทคโนโลยีห้องประชุมเปิดเวลา 08:30 น.\n<a href='https://www.facebook.com/SCIandTECH.RMUTT/posts/pfbid026YRVzaAsSqkFuT1TqVH1P2AUNJYAUih5HWJjpeaMVAUyMP2yfKf9abi91LbhVUnwl?rdid=96oY8RjK3mXpJdg2#' target='_blank' style='color:#ffd700;font-weight:bold;'>รายละเอียดเพิ่มเติม</a>",
     date: "30 มิถุนายน 2569"
     
-  },
+  },*/
 
   {
     id: 3,
